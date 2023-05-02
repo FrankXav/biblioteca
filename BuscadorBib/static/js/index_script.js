@@ -1,4 +1,4 @@
-var columns = ['Nombre','Autor','Charola','Pasillo'];
+var columns = ['Nombre','Autor','Pasillo','Charola'];
 
 const dataTableOptions = {
     //scrollX: "2000px",
