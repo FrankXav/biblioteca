@@ -1,11 +1,11 @@
-var columns = ['Nombre','Autor','Descripción','Estante','Repisa'];
+var columns = ['Nombre','Autor','Charola','Pasillo'];
 
 const dataTableOptions = {
     //scrollX: "2000px",
     lengthMenu: [5, 10, 15, 20, 100, 200, 500],
     pageLength: 10,
     columnDefs: [
-        { className: "centered", targets: [0, 1, 2, 3, 4] },
+        { className: "centered", targets: [0, 1, 2, 3] },
         //{ orderable: false, targets: [] },
         //{ searchable: false, targets: [1] }
         //{ width: "50%", targets: [0] }
@@ -54,9 +54,9 @@ $( document ).ready(function(){
                 celdaautor = document.createElement('td');
                 celdaautor.innerHTML = element.autor;
                 fila.appendChild(celdaautor);
-                celdades = document.createElement('td');
+                /* celdades = document.createElement('td');
                 celdades.innerHTML = element.descripcion;
-                fila.appendChild(celdades);
+                fila.appendChild(celdades); */
                 celdaest = document.createElement('td');
                 celdaest.innerHTML = element.estante;
                 fila.appendChild(celdaest);
